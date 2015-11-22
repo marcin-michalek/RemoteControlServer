@@ -18,7 +18,7 @@ public class Application {
     public static void main(String[] args) {
         new SpringApplicationBuilder(Application.class)
                 .headless(false)
-                .web(false)
+//                .web(false)
                 .run(args);
 
         TrayIconUtil.showTrayIcon("src/resources/rect.gif");
