@@ -19,8 +19,8 @@ apply plugin: 'spring-boot'
 apply plugin: 'war'
 
 jar {
-    baseName = 'PiServer'
-    version =  '0.0.1'
+    baseName = 'RemoteControl'
+    version =  '1.0.0'
 }
 
 repositories {
@@ -42,8 +42,4 @@ dependencies {
 }
 configurations {
     providedRuntime
-}
-
-task wrapper(type: Wrapper) {
-    gradleVersion = '1.11'
 }

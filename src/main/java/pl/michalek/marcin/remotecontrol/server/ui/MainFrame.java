@@ -19,7 +19,6 @@ public class MainFrame extends JFrame {
 
         add(panel);
         pack();
-        setVisible(true);
     }
 
 }

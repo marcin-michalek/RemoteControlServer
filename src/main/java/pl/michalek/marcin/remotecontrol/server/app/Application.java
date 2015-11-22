@@ -15,17 +15,19 @@ import pl.michalek.marcin.remotecontrol.server.utils.TrayIconUtil;
 @ComponentScan
 @EnableAutoConfiguration
 public class Application {
+
     public static void main(String[] args) {
+        TrayIconUtil.initTrayIcon("/rect_yellow.png");
         new SpringApplicationBuilder(Application.class)
                 .headless(false)
-//                .web(false)
                 .run(args);
 
-        TrayIconUtil.showTrayIcon("src/resources/rect.gif");
+        TrayIconUtil.setFrame(frame());
+        TrayIconUtil.setTrayIconImage("/rect_green.png");
     }
 
     @Bean
-    public MainFrame frame() {
+    public static MainFrame frame() {
         return new MainFrame();
     }
 }
