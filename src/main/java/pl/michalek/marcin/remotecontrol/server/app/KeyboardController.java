@@ -12,7 +12,7 @@ import java.awt.event.KeyEvent;
  * Controller responsible for doing key press events via Robot class.
  */
 @RestController
-@RequestMapping("/control")
+@RequestMapping("/keyboard")
 public class KeyboardController {
     private Robot robot;
 
