@@ -1,5 +1,5 @@
 group 'pl.michalek.marcin.remotecontrol'
-version '1.0'
+version '1.0.2'
 
 buildscript {
     repositories {
@@ -20,7 +20,7 @@ apply plugin: 'war'
 
 jar {
     baseName = 'RemoteControl'
-    version =  '1.0.1'
+    version =  '1.0.2'
 }
 
 repositories {
